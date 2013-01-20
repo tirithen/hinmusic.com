@@ -26,6 +26,7 @@ global $page, $paged;
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="icon" href="<?php echo get_template_directory_uri() . '/images/hin.png'?>" type="image/png">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300|Inconsolata:400' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -57,6 +58,9 @@ jQuery(document).ready(function($){
 		<div class="headersection-stripe-filler-top"></div>
 		  <div class="headersection-right-stripe">
 			<div class="site-navigation main-navigation">
+				<?php wp_nav_menu(array( 'menu' => 'menu right','sort_column' => 'menu_order', 'container_class' => 'menuright' ) ); ?>
+			</div>
+			<div class="site-navigation main-navigation extrafont">
 				<?php wp_nav_menu(array( 'menu' => 'menu right','sort_column' => 'menu_order', 'container_class' => 'menuright' ) ); ?>
 			</div>
 		  </div>
