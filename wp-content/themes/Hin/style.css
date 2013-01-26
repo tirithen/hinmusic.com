@@ -672,18 +672,17 @@ width:930px;
 margin:auto;
 width:620px;
 }
-
 .randomGrid {
-border: 2px solid black;
 }
 
 .randomGrid-row {
 width:1200px;
 height:350px;
-border: 2px solid black;
 }
 .randomGrid-column {
-border: 2px solid black;
+float:left;
+width: 400px;
+height:350px;
 }
 
 
@@ -697,7 +696,8 @@ border: 2px solid black;
 }
 
 .entry-content-circle{
-	display:none;
+	/*display:none;*/
+	display:block;
 	padding: 50px;
     margin: 5px;
 	background-image:url(images/headers/headerbackgsmall.png);
