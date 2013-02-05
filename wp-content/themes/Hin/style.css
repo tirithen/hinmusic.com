@@ -696,8 +696,8 @@ height:350px;
 }
 
 .entry-content-circle{
-	/*display:none;*/
-	display:block;
+	display:none;
+	/*display:block;*/
 	padding: 50px;
     margin: 5px;
 	background-image:url(images/headers/headerbackgsmall.png);

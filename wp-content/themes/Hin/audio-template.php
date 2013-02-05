@@ -62,10 +62,10 @@ function appendpostfromjson(data){
 					var appendpost = posts.shift();		
 					jQuery(this).append(appendpost);
 				}
-			}
-		});
+			}			
+		});		
 	});
-	
+	jQuery('.entry-content-circle').fadeIn(2000);	
 }
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
