@@ -30,12 +30,10 @@
 		<![endif]-->
 		<?php wp_head(); ?>
 		<script type="text/javascript">
-		jQuery(document).ready(function($){
+		/*jQuery(function($) {
 			Shadowbox.init();
-			$('.entry-content-circle').fadeIn(1000);
-			$('.entry-content-circle-large').fadeIn(1000);
-			$('.entry-content-gallery-circle-large').fadeIn(1000);
-		});
+			$('.entry-content-circle, .entry-content-circle-large, .entry-content-gallery-circle-large').hide().fadeIn(1000);
+		});*/
 		</script>
 	</head>
 	<body <?php body_class(); ?>>
