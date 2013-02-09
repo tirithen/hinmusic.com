@@ -545,7 +545,6 @@ height:350px;
 }
 
 .entry-content-circle{
-    display:none;
     padding: 50px;
     margin: 5px;
     background: rgba(0, 0, 0, .72);
@@ -559,7 +558,6 @@ height:350px;
     text-align:justify;
 }
 .entry-content-circle-large{
-    display:none;
     padding: 100px;
     margin-top: 1.5em;
     margin-left: auto;
@@ -576,7 +574,6 @@ height:350px;
 
 }
 .entry-content-gallery-circle-large{
-    display:none;
     padding: 100px;
     margin-top: 1.5em;
     margin-left: auto;
