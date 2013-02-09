@@ -18,15 +18,15 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<meta name="author" content="Magnus Rydén">
+<meta name="author" content="Magnus Rydén &amp; Fredrik Söderström">
 <title><?php
 global $page, $paged;
 
-?>Hin  <?php wp_title( '|', true, 'right' )?></title>
+?>Hin  <?php wp_title( '|', true, 'left' )?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="icon" href="<?php echo get_template_directory_uri() . '/images/hin.png'?>" type="image/png">
-<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300|Inconsolata:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -41,8 +41,7 @@ jQuery(document).ready(function($){
 </script>
 </head>
 
-<body <?php body_class(); ?> style="margin-top:-15px;">
-<img src="<?php echo get_template_directory_uri() . '/images/backgroundfuzzy.png'?>" class="bg">
+<body <?php body_class(); ?>>
 <div id="header-area">
      <header id="masthead" class="site-header" role="banner" >
 		<br />
@@ -58,9 +57,6 @@ jQuery(document).ready(function($){
 		<div class="headersection-stripe-filler-top"></div>
 		  <div class="headersection-right-stripe">
 			<div class="site-navigation main-navigation">
-				<?php wp_nav_menu(array( 'menu' => 'menu right','sort_column' => 'menu_order', 'container_class' => 'menuright' ) ); ?>
-			</div>
-			<div class="site-navigation main-navigation extrafont">
 				<?php wp_nav_menu(array( 'menu' => 'menu right','sort_column' => 'menu_order', 'container_class' => 'menuright' ) ); ?>
 			</div>
 		  </div>
