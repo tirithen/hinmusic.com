@@ -21,10 +21,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     border: 0;
     font-size: 100%;
     font-style: inherit;
-    font-family: Helvetica;
-    font-stretch: condensed;
+    font-family: Helvetica, sans-serif;
     font-weight: 100;
-    font-size: small;
+    font-size: 13px;
     color: #FFFFFE;
     font-weight: inherit;
     margin: 0;
@@ -34,7 +33,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 html {
-    font-size: 14px;
     overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
     -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
     -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
@@ -94,7 +92,6 @@ textarea {
     color: #404040;
     font-family: sans-serif;
     font-size: 16px;
-    font-size: 1.6rem;
     line-height: 1.5;
 }
 
@@ -753,7 +750,7 @@ object {
     width: 50%;
     margin-left:auto;
     margin-right:auto;
-    font-family: Helvetica;
+    font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
     font-stretch: condensed;
     font-weight: 100;
     font-size: medium;
@@ -1009,11 +1006,6 @@ a.comment-reply-link > span {
     position: absolute;
     top: 45px;
     z-index: 1;
-}
-
-#respond .comment-notes,
-#respond .logged-in-as {
-    font-size: 13px;
 }
 
 #respond p {
