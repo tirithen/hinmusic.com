@@ -316,7 +316,7 @@ margin-right:auto;
 
 }
 #primary-fixed-large {
-width: 1200px;
+max-width:1900px;
 margin-left:auto;
 margin-right:auto;
 
@@ -676,13 +676,16 @@ width:620px;
 }
 
 .randomGrid-row {
-width:1200px;
+max-width:1900px;
+min-width:1200px;
 height:350px;
+text-align: justify;    
 }
 .randomGrid-column {
-float:left;
-width: 400px;
+/*float:left;*/
+width: 33.33%;
 height:350px;
+display: inline-block;   
 }
 
 
