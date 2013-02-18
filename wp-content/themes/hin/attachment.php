@@ -21,7 +21,7 @@
             <?php _e( '<a class="comment-link" href="#respond" title="Post a comment">post a comment</a> ', 'shape' ); ?>                       
         <?php endif; ?>  
 		<?php //endif; ?>
-		<?php edit_post_link( __( 'Edit', 'shape' ), ' <span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Redigera', 'shape' ), ' <span class="edit-link">', '</span>' ); ?>
 		<div class="entry-meta" style="float:right">
 					<?php shape_posted_on(); ?>
 		</div><!-- .entry-meta -->		

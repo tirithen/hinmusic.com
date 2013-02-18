@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
 				<?php the_content();?>
 				</div>
 				<br />				
-				<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
+				<?php edit_post_link( __( 'Redigera', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 				<div class="entry-meta" style="float:right">
 					<?php shape_posted_on(); ?>
 				</div><!-- .entry-meta -->
