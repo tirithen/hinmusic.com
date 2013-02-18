@@ -3,7 +3,15 @@
  * @package Hin
  * @since Hin 1.0
  */
-?>
+?> 
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function(jQuery){
+	jQuery(function($) {		
+		$('.entry-content-circle-large').fadeIn(1000);
+	});	
+});
+</script>		
 
 <div class="entry-content-circle-large">
     <h1 class="main-entry-title-circle"><?php the_title();?></h1>

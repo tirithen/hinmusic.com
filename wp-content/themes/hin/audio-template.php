@@ -6,12 +6,11 @@ Template Name: audio-template
 <?php get_header(); ?>
 
 <script type="text/javascript">
-
 jQuery.noConflict();
 jQuery(document).ready(function(jQuery){
-	jQuery(function($) {
-		$('.entry-content-circle').fadeIn(1000);
-	});
+	jQuery(function($) {		
+		$('.entry-content-circle-medium').fadeIn(1000);
+	});	
 //generateGrid(3);
 //appendToGrid();
 //var root = location.protocol + '//' + location.host;
@@ -83,16 +82,16 @@ function getRandomInt(min, max) {
 				$c = 0;
 				$clastpost = 0;
 				while ( $loop->have_posts() ) : $loop->the_post(); $c++; $clastpost = $c; ?>
-				<?php if( $c == 1) {?>
-				 <div class="rowfull">
-				<?php } else if($c == 4){?>
-				<div class="rowpair">
-				<?php } ?>
-					<div align="center" class="entry-content-circle float-left" style="display:none">
-						<h2 class="main-entry-title-circle">
-						 <?php the_title();?>
-					    </h2>
-				 <?php the_excerpt();?>
+				<?php if( $c == 1) {?>				
+				 <div class="rowfull-medium">				 
+				<?php } else if($c == 4){?>				
+				<div class="rowpair-medium">					
+				<?php } ?>				
+					<div align="center" class="entry-content-circle-medium float-left" style="display:none">
+						<h2 class="main-entry-title-circle"><?php the_title();?></h2>
+				<div class="audiocontainer">
+				 <?php the_excerpt();?>	
+				</div>
 				 <a class="comment-link" href="<?php comments_link(); ?>">
 				   Mer..
 				 </a>
