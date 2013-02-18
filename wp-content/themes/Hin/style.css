@@ -439,7 +439,15 @@ float: left;
     margin-top: 45px;
     float: left;
     background: rgba(0, 0, 0, .72);
-    width: calc(50% - 110px); /* subtracting half the header logotype width */
+     /* subtracting half the header logotype width - Different Browser support*/	
+	/* Firefox */
+	width: -moz-calc(50% - 110px);
+	/* WebKit */
+	width: -webkit-calc(50% - 110px);
+	/* Opera */
+	width: -o-calc(50% - 110px);
+	/* Standard */
+	width: calc(50% - 110px);
 }
 
 .menuleft ul,
