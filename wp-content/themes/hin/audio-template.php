@@ -9,9 +9,8 @@ Template Name: audio-template
 
 jQuery.noConflict();
 jQuery(document).ready(function(jQuery){
-	jQuery(function($) {
-		Shadowbox.init();
-		$('.entry-content-circle').hide().fadeIn(1000);
+	jQuery(function($) {		
+		$('.entry-content-circle').fadeIn(1000);
 	});	
 //generateGrid(3);
 //appendToGrid();
@@ -88,7 +87,7 @@ function getRandomInt(min, max) {
 				<?php } else if($c == 4){?>				
 				<div class="rowpair">					
 				<?php } ?>				
-					<div align="center" class="entry-content-circle float-left">
+					<div align="center" class="entry-content-circle float-left" style="display:none">
 						<div class="main-entry-title-circle">				
 						 <?php the_title();?>		
 					    </div>

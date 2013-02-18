@@ -526,9 +526,10 @@ float:left;
 width:930px;
 }
 .rowpair {
-margin:auto;
+margin:0px auto 0px auto;
 width:620px;
 }
+
 .randomGrid {
 }
 
@@ -557,7 +558,7 @@ display: inline-block;
 
 .entry-content-circle{
     padding: 50px;
-    margin: 5px;
+    margin: -10px 5px -10px 5px;
     background: rgba(0, 0, 0, .72);
     width: 200px;
     height: 200px;

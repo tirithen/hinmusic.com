@@ -3,7 +3,15 @@
 Template Name: home-template
 */
 ?>
- 
+<?php get_header(); ?>
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function(jQuery){
+	jQuery(function($) {		
+		$('.entry-content-circle').fadeIn(1000);
+	});	
+});
+</script>		
 <?php get_header(); ?>		
         <div id="primary" class="content-area">
             <div id="content" class="site-content" role="main">				
@@ -17,7 +25,7 @@ Template Name: home-template
 				<?php } else if($c == 4){?>				
 				<div class="rowpair">					
 				<?php } ?>				
-					<div align="center" class="entry-content-circle float-left">
+					<div class="entry-content-circle float-left" style="display:none">
 						<div class="main-entry-title-circle">				
 						 <?php the_title();?>		
 					    </div>
