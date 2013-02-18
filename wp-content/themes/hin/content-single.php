@@ -5,11 +5,19 @@
  */
 ?>
  
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function(jQuery){
+	jQuery(function($) {		
+		$('.entry-content-circle-large').fadeIn(1000);
+	});	
+});
+</script>		
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">         
     </header><!-- .entry-header -->
  
-    <div class="entry-content-circle-large">
+    <div class="entry-content-circle-large" style="display:none">
 	    <div class="main-entry-title-circle">
 				<?php the_title();?>		
 		</div>
