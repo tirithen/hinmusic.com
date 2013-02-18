@@ -5,6 +5,14 @@ Template Name: home-template
 ?>
 
 <?php get_header(); ?>
+		<script type="text/javascript">
+			jQuery.noConflict();
+			jQuery(document).ready(function(jQuery){
+				jQuery(function($) {		
+					$('.entry-content-circle').fadeIn(1000);
+				});	
+			});
+		</script>
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content" role="main">
 				<?php

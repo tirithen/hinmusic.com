@@ -439,7 +439,15 @@ float: left;
     margin-top: 45px;
     float: left;
     background: rgba(0, 0, 0, .72);
-    width: calc(50% - 110px); /* subtracting half the header logotype width */
+     /* subtracting half the header logotype width - Different Browser support*/	
+	/* Firefox */
+	width: -moz-calc(50% - 110px);
+	/* WebKit */
+	width: -webkit-calc(50% - 110px);
+	/* Opera */
+	width: -o-calc(50% - 110px);
+	/* Standard */
+	width: calc(50% - 110px);
 }
 
 .menuleft ul,
@@ -518,9 +526,10 @@ float:left;
 width:930px;
 }
 .rowpair {
-margin:auto;
+margin:0px auto 0px auto;
 width:620px;
 }
+
 .randomGrid {
 }
 
@@ -549,7 +558,7 @@ display: inline-block;
 
 .entry-content-circle{
     padding: 50px;
-    margin: 5px;
+    margin: -10px 5px -10px 5px;
     background: rgba(0, 0, 0, .72);
     width: 200px;
     height: 200px;
