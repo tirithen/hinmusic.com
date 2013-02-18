@@ -303,6 +303,6 @@ function create_audiopost() {
  */
 require( get_template_directory() . '/inc/custom-header.php' );
 
-add_filter('excerpt_length', 'my_excerpt_length');
-function my_excerpt_length($length) {
-return 230; }
+add_filter('excerpt_length', function ($length) {
+    return 25;
+});

@@ -528,13 +528,13 @@ width:620px;
 max-width:1900px;
 min-width:1200px;
 height:350px;
-text-align: justify;    
+text-align: justify;
 }
 .randomGrid-column {
 /*float:left;*/
 width: 33.33%;
 height:350px;
-display: inline-block;   
+display: inline-block;
 }
 
 
@@ -743,19 +743,20 @@ object {
 /*Posts
 ----------------------------------------------- */
 .main-entry-title{
-    text-align:center
+    text-align:center;
     font-size: 24px;
 }
 .main-entry-title-circle{
-    width: 50%;
     margin-left:auto;
     margin-right:auto;
     font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
     font-stretch: condensed;
     font-weight: 100;
     font-size: medium;
-    margin-top:15px;
+    margin-top:6px;
     text-align:center;
+    max-height: 48px;
+    overflow: hidden;
 }
 
 /* =Comments
