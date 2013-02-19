@@ -661,12 +661,9 @@ display: inline-block;
 
 /* =Media
 ----------------------------------------------- */
- /*.site-header img{
-  width: 120px;
-  height:120px;
-  z-index:-1;
-
- }*/
+ .fadeIn {
+	display:none;
+ }
  .gallerycollection a {
 	margin-right: 3px;
  }

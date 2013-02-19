@@ -4,29 +4,13 @@ Template Name: imagelibrary-template
 */
 ?>
  
-<?php get_header(); ?>
-<script type="text/javascript">
-jQuery(document).ready(function($){	    
-	$('#slider').bjqs({        
-        'randomstart' : false,
-		'automatic' : false,
-		'animtype' : 'slide',
-		'animduration' : 1000,
-		'keyboardnav' : false,
-		'width' : $(window).width(),
-		'height' : 950,
-		'responsive' : true,
-		'nexttext': '',
-        'prevtext': ''
-    });	
-});
-</script>		
+<?php get_header(); ?>	
         <div id="primary-full " class="content-area">
            <div id="content" class="site-content" role="main">
 				<?php $args = array( 'post_type' => 'imagelibrary', 'posts_per_page' => 10 );
 				$loop = new WP_Query( $args );
 				?>							
-			 <div id="slider" style="width:100%">
+			 <div id="slider" class="slider" style="width:100%">
 				<ul class="bjqs">				
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>				
 				<li>

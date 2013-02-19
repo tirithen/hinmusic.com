@@ -6,12 +6,12 @@ Template Name: home-template
 
 <?php get_header(); ?>
 		<script type="text/javascript">
-			jQuery.noConflict();
+			/*jQuery.noConflict();
 			jQuery(document).ready(function(jQuery){
 				jQuery(function($) {		
 					$('.entry-content-circle').fadeIn(1000);
 				});	
-			});
+			});*/
 		</script>
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content" role="main">
@@ -24,7 +24,7 @@ Template Name: home-template
 					<?php } else if($c == 4){?>
 					<div class="rowpair">
 						<?php } ?>
-						<div align="center" class="entry-content-circle float-left" style ="display:none">
+						<div align="center" class="entry-content-circle float-left fadeIn" ">
 							<h2 class="main-entry-title-circle"><?php the_title();?></h2>
 							<?php the_excerpt();?>
 							<a class="comment-link" href="<?php comments_link(); ?>">Mer...</a>

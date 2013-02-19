@@ -3,17 +3,9 @@
  * @package Hin
  * @since Hin 1.0
  */
-?> 
-<script type="text/javascript">
-jQuery.noConflict();
-jQuery(document).ready(function(jQuery){
-	jQuery(function($) {		
-		$('.entry-content-circle-large').fadeIn(1000);
-	});	
-});
-</script>		
+?> 	
 
-<div class="entry-content-circle-large">
+<div class="entry-content-circle-large fadeIn">
     <h1 class="main-entry-title-circle"><?php the_title();?></h1>
     <?php the_content(); ?>
     <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'shape' ), 'after' => '</div>' ) ); ?>
