@@ -1,6 +1,6 @@
 /*
 Theme Name: Hin
-Author: Magnus Rydén
+Author: Magnus RydÃ©n
 Description: Circle based theme for the band Hin.
 Version: 1.0
 License: Private only
@@ -21,9 +21,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	font-size: 100%;
 	font-style: inherit;
-	font-family: Helvetica, sans-serif;
-	font-weight: 100;
-	font-size: 13px;
+	font-family: 'Josefin Slab' , 'Helvetica', sans-serif;
+	font-size: 16px;
+	line-height: 1.1;
 	color: #FFFFFE;
 	font-weight: inherit;
 	margin: 0;
@@ -102,7 +102,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	font-size: 150%;
+	font-size: 200%;
 }
 
 h2 {
@@ -118,7 +118,7 @@ hr {
 
 /* Text elements */
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 0.5em;
 }
 
 ul, ol {
@@ -487,13 +487,10 @@ float: left;
 	display: block;
 	text-decoration: none;
 	font-family: 'Josefin Slab', 'Helvetica', sans-serif;
-	font-stretch: condensed;
-	font-weight: 300;
-	font-size: 22px;
+	font-size: 25px;
 	line-height: 1;
 	color: #fff;
-	padding: 63px 13px 34px;
-	text-transform: uppercase;
+	padding: 63px 10px 31px;
 	-webkit-transition: all 0.2s ease-in; /*Safari & Chrome*/
 	transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in; /* Firefox 4 */
@@ -591,7 +588,7 @@ display: inline-block;
 	-ms-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
-	text-align:justify;
+	text-align: center;
 }
 
 .entry-content-circle-medium{
@@ -626,12 +623,12 @@ display: inline-block;
 
 .entry-content-circle-large,
 .entry-content-gallery-circle-large {
-	padding: 100px;
+	padding: 70px;
 	margin-left: auto;
 	margin-right: auto;
 	background: rgba(0, 0, 0, .72);
-	width: 700px;
-	height: 700px;
+	width: 660px;
+	height: 660px;
 	border-radius: 50%;
 	-o-border-radius: 50%;
 	-ms-border-radius: 50%;
@@ -642,7 +639,7 @@ display: inline-block;
 	-ms-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	text-align: justify;
+	text-align: center;
 }
 
 .page-links {
@@ -801,8 +798,8 @@ object {
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:6px;
+	margin-bottom:12px;
 	text-align:center;
-	max-height: 48px;
 	overflow: hidden;
 }
 
