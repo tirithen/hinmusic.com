@@ -98,6 +98,15 @@ textarea {
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
+	font-family: 'Junge', 'Helvetica', sans-serif;
+}
+
+h1 {
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 120%;
 }
 
 hr {
@@ -341,6 +350,7 @@ a {
 ----------------------------------------------- */
 body {
 	min-width: 930px;
+	padding-bottom: 100px;
 }
 
 .site {
@@ -476,14 +486,16 @@ float: left;
 .menuright ul li a {
 	display: block;
 	text-decoration: none;
-	font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
+	font-family: 'Josefin Slab', 'Helvetica', sans-serif;
 	font-stretch: condensed;
 	font-weight: 300;
-	font-size: 31px;
+	font-size: 22px;
 	line-height: 1;
 	color: #fff;
-	padding: 58px 13px 30px;
+	padding: 63px 13px 34px;
+/*
 	text-transform: uppercase;
+*/
 	-webkit-transition: all 0.2s ease-in; /*Safari & Chrome*/
 	transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in; /* Firefox 4 */
@@ -607,9 +619,9 @@ display: inline-block;
 	background: rgba(0, 0, 190, .40);
 }
 
-.entry-content-circle-medium audiocontainer { 
+.entry-content-circle-medium audiocontainer {
 	margin-left:auto;
-	margin-right:auto;     
+	margin-right:auto;
 	margin-top:10px;
 	text-align:center;
 }
@@ -790,10 +802,6 @@ object {
 .main-entry-title-circle{
 	margin-left:auto;
 	margin-right:auto;
-	font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
-	font-stretch: condensed;
-	font-weight: 100;
-	font-size: medium;
 	margin-top:6px;
 	text-align:center;
 	max-height: 48px;
