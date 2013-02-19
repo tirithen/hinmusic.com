@@ -493,9 +493,7 @@ float: left;
 	line-height: 1;
 	color: #fff;
 	padding: 63px 13px 34px;
-/*
 	text-transform: uppercase;
-*/
 	-webkit-transition: all 0.2s ease-in; /*Safari & Chrome*/
 	transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in; /* Firefox 4 */
