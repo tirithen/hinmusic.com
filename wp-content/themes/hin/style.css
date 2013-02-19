@@ -797,8 +797,8 @@ object {
 .main-entry-title-circle{
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:6px;
-	margin-bottom:12px;
+	padding-top:6px;
+	padding-bottom:12px;
 	text-align:center;
 	overflow: hidden;
 }
