@@ -497,15 +497,6 @@ float: left;
 	line-height: 1;
 	color: #fff;
 	padding: 63px 10px 31px;
-	-webkit-transition: all 0.2s ease-in; /*Safari & Chrome*/
-	transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in; /* Firefox 4 */
-	-o-transition: all 0.2s ease-in; /* Opera */
-}
-
-.menuleft ul li a:hover,
-.menuright ul li a:hover {
-	color: #aaa;
 }
 
 /* =Content
@@ -693,13 +684,13 @@ display: inline-block;
  .fadeIn {
 	display:none;
  }
- .gallerycollection  {	
+ .gallerycollection  {
 	margin-top:10%;
 	text-align:center;
 	vertical-align:center;
  }
  .gallerycollection a {
-	margin: 5px;	
+	margin: 5px;
  }
  .gallerycollection img{
   border: 1px solid transparent;
@@ -803,12 +794,22 @@ object {
 
 .site-content .site-navigation {
 	margin: 0 0 1.5em;
-	overflow: hidden;
 }
+
+.site-content .site-navigation a {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.62);
+	font-size: 105%;
+	padding: 1px 8px;
+	text-shadow: none;
+}
+
 .site-content .nav-previous {
 	float: left;
 	width: 50%;
 }
+
 .site-content .nav-next {
 	float: right;
 	text-align: right;
@@ -951,6 +952,16 @@ object {
 	top: 2.2em;
 }
 
+a {
+	transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in; /* Opera */
+	-ms-transition: all 0.2s ease-in; /* IE */
+	-moz-transition: all 0.2s ease-in; /* Firefox 4 */
+	-webkit-transition: all 0.2s ease-in; /*Safari & Chrome*/
+}
+
+a:hover,
+a:focus,
 .edit-link a:hover,
 .edit-link a:focus,
 .edit-link a:active,
@@ -964,7 +975,7 @@ a.comment-link:hover,
 a.comment-reply-link:hover,
 a.comment-reply-link:focus,
 a.comment-reply-link:active {
-	color: #666;
+	color: #eee;
 }
 
 a.comment-reply-link > span {
