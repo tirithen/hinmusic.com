@@ -598,14 +598,14 @@ display: inline-block;
 	position: relative;
 }
 
-.entry-content-circle > a { /* Published date */
+.entry-content-circle > a[rel=bookmark] { /* Published date */
 	position: absolute;
 	bottom: 30px;
 	left: 96px;
 }
 
 .entry-content-circle a,
-.entry-content-circle > a:hover {
+.entry-content-circle > a[rel=bookmark]:hover {
 	text-decoration: none;
 }
 

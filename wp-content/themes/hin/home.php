@@ -26,7 +26,7 @@ Template Name: home-template
 						<?php } ?>
 						<div align="center" class="entry-content-circle float-left fadeIn" ">
 							<h2 class="main-entry-title-circle"><?php hin_linked_title(); ?></h2>
-							<?php the_excerpt();?>
+							<?php hin_linked_excerpt(); ?>
 							<?php shape_posted_on(); ?>
 						</div>
 						<?php if($c == 3) {

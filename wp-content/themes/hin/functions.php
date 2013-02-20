@@ -16,6 +16,10 @@ function hin_linked_title() {
     echo '<a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_title().'</a>';
 }
 
+function hin_linked_excerpt() {
+    echo '<a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_excerpt().'</a>';
+}
+
 if ( ! isset( $content_width ) )
     $content_width = 950; /* pixels */
 
