@@ -187,67 +187,7 @@ function shape_category_transient_flusher() {
 add_action( 'edit_category', 'shape_category_transient_flusher' );
 add_action( 'save_post', 'shape_category_transient_flusher' );
 
-/**
- * Setup the WordPress core custom background feature.
- *
- * Use add_theme_support to register support for WordPress 3.4+
- * as well as provide backward compatibility for previous versions.
- * Use feature detection of wp_get_theme() which was introduced
- * in WordPress 3.4.
- *
- * Hooks into the after_setup_theme action.
- *
- */
-function shape_register_custom_background() {
-    $args = array(
-        'default-color' => 'e9e0d1',
-    );
-
-    $args = apply_filters( 'shape_custom_background_args', $args );
-
-    if ( function_exists( 'wp_get_theme' ) ) {
-        add_theme_support( 'custom-background', $args );
-    } else {
-        define( 'BACKGROUND_COLOR', $args['default-color'] );
-        if (isset($args['default-image'])) {
-            define( 'BACKGROUND_IMAGE', $args['default-image'] );
-        } else {
-            define( 'BACKGROUND_IMAGE', '' );
-        }
-
-        add_custom_background();
-    }
-}
-add_action( 'after_setup_theme', 'shape_register_custom_background' );
-
-add_action( 'init', 'create_article' );
-function create_article() {
-  $labels = array(
-    'name' => _x('Articles', 'post type general name'),
-    'singular_name' => _x('Article', 'post type singular name'),
-    'add_new' => _x('Add New', 'Article'),
-    'add_new_item' => __('Add New Article'),
-    'edit_item' => __('Edit Article'),
-    'new_item' => __('New Article'),
-    'view_item' => __('View Article'),
-    'search_items' => __('Search Articles'),
-    'not_found' =>  __('No Articles found'),
-    'not_found_in_trash' => __('No Articles found in Trash'),
-    'parent_item_colon' => '',
-	//'supports' => array('title','editor','author','thumbnail','excerpt','comments')
-  );
-
-  $supports = array('title', 'editor','author', 'custom-fields', 'revisions', 'excerpt','comments');
-  register_post_type( 'article',
-    array(
-      'labels' => $labels,
-      'public' => true,
-      'supports' => $supports
-    )
-  );
-}
-
-add_action( 'init', 'create_imagelibrary' );
+/*add_action( 'init', 'create_imagelibrary' );
 function create_imagelibrary() {
   $labels = array(
     'name' => _x('ImageLibraries', 'post type general name'),
@@ -272,7 +212,7 @@ function create_imagelibrary() {
       'supports' => $supports
     )
   );
-}
+}*/
 
 add_action( 'init', 'create_audiopost' );
 function create_audiopost() {
