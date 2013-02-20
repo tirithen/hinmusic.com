@@ -12,7 +12,9 @@
  * @since Hin 1.0
  */
 
-
+function hin_linked_title() {
+    echo '<a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_title().'</a>';
+}
 
 if ( ! isset( $content_width ) )
     $content_width = 950; /* pixels */
