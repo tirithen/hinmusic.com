@@ -187,7 +187,7 @@ function shape_category_transient_flusher() {
 add_action( 'edit_category', 'shape_category_transient_flusher' );
 add_action( 'save_post', 'shape_category_transient_flusher' );
 
-/*add_action( 'init', 'create_imagelibrary' );
+add_action( 'init', 'create_imagelibrary' );
 function create_imagelibrary() {
   $labels = array(
     'name' => _x('ImageLibraries', 'post type general name'),
@@ -212,7 +212,7 @@ function create_imagelibrary() {
       'supports' => $supports
     )
   );
-}*/
+}
 
 add_action( 'init', 'create_audiopost' );
 function create_audiopost() {
