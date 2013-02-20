@@ -16,7 +16,7 @@ Template Name: imagelibrary-template
 				<li>
 				<div class="entry-content-gallery-circle-large">
 				<div class="main-entry-title-circle">
-				<?php the_title();?><br /><br />		
+				<h2><?php the_title();?><h2><br /><br />		
 				</div>
 				<?php //remove_filter (‘the_content’, ‘wpautop’); ?>
 				<div class="gallerycollection ">
