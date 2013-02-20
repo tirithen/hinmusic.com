@@ -499,6 +499,11 @@ body {
 	padding: 63px 7px 31px;
 }
 
+.menuleft ul li a:hover,
+.menuright ul li a:hover {
+	text-shadow: 0 0 10px rgba(246, 255, 115, 0.5);
+}
+
 .menuleft ul li.current-menu-item a,
 .menuright ul li.current-menu-item a {
 	color: #fff;
@@ -1244,4 +1249,46 @@ img.bg {
 /* 404 page styling */
 body.error404 h1 {
 	text-align: center;
+}
+
+/* Members page */
+body.page-template-memberslist-template-php h1 {
+	text-align: center;
+
+}
+
+body.page-template-memberslist-template-php #content {
+	margin: 0;
+}
+
+body.page-template-memberslist-template-php #content li {
+	list-style-type: none;
+	margin: 0 auto;
+	padding-bottom: 130px;
+	width: 680px;
+	clear: both;
+	overflow: hidden;
+}
+
+body.page-template-memberslist-template-php #content img {
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	display: block;
+	margin: 0 20px;
+	float: left;
+	position: relative;
+	top: 40px;
+}
+
+body.page-template-memberslist-template-php #content .entry-content-circle {
+	display: block;
+	margin: 0 20px;
+	float: left;
+}
+
+body.page-template-memberslist-template-php #content li:nth-child(even) .entry-content-circle {
+	float: right;
 }
