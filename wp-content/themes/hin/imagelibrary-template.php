@@ -10,15 +10,15 @@ Template Name: imagelibrary-template
 				<?php $args = array( 'post_type' => 'imagelibrary', 'posts_per_page' => 10 );
 				$loop = new WP_Query( $args );
 				?>							
-			 <div id="slider" class="slider" style="width:100%">
+			 <div id="slider" class="slider fadeIn" style="width:100%">
 				<ul class="bjqs">				
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>				
 				<li>
 				<div class="entry-content-gallery-circle-large">
 				<div class="main-entry-title-circle">
-				<?php the_title();?><br /><br />		
+				<h2><?php the_title();?><h2><br /><br />		
 				</div>
-				<?php remove_filter (‘the_content’, ‘wpautop’); ?>
+				<?php //remove_filter (‘the_content’, ‘wpautop’); ?>
 				<div class="gallerycollection ">
 				<?php the_content();?>
 				</div>

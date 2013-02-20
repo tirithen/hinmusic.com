@@ -127,7 +127,9 @@ function hin_scripts() {
 	wp_enqueue_script( 'flippy', get_template_directory_uri() . '/js/flippy/jquery.flippy.js', array( 'jquery' ), '20130101', true );
 	wp_enqueue_script( 'pageFadeIn', get_template_directory_uri() . '/js/jquery.pageFadeIn.js', array( 'jquery' ), '20130219', true );
 	wp_enqueue_script( 'basicsliderInit', get_template_directory_uri() . '/js/jquery.basicsliderInit.js', array( 'jquery' ), '20130219', true );
-    /*if ( is_singular() && wp_attachment_is_image() ) {
+	wp_enqueue_script( 'shadowboxInit', get_template_directory_uri() . '/js/jquery.shadowboxInit.js', array( 'jquery' ), '20130219', true );
+    
+	/*if ( is_singular() && wp_attachment_is_image() ) {
         wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
     }*/
 }
@@ -191,7 +193,7 @@ function shape_category_transient_flusher() {
 add_action( 'edit_category', 'shape_category_transient_flusher' );
 add_action( 'save_post', 'shape_category_transient_flusher' );
 
-/*add_action( 'init', 'create_imagelibrary' );
+add_action( 'init', 'create_imagelibrary' );
 function create_imagelibrary() {
   $labels = array(
     'name' => _x('ImageLibraries', 'post type general name'),
@@ -216,7 +218,7 @@ function create_imagelibrary() {
       'supports' => $supports
     )
   );
-}*/
+}
 
 add_action( 'init', 'create_audiopost' );
 function create_audiopost() {
