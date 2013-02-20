@@ -499,6 +499,13 @@ float: left;
 	padding: 63px 10px 31px;
 }
 
+.menuleft ul li.current-menu-item a,
+.menuright ul li.current-menu-item a {
+	color: #fff;
+	font-weight: 700;
+	text-shadow: 0 0 10px rgba(246, 255, 115, 0.5);
+}
+
 /* =Content
 ----------------------------------------------- */
 
