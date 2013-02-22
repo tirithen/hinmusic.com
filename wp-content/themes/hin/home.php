@@ -8,9 +8,9 @@ Template Name: home-template
 		<script type="text/javascript">
 			/*jQuery.noConflict();
 			jQuery(document).ready(function(jQuery){
-				jQuery(function($) {		
+				jQuery(function($) {
 					$('.entry-content-circle').fadeIn(1000);
-				});	
+				});
 			});*/
 		</script>
 		<div id="primary" class="content-area">
@@ -25,15 +25,11 @@ Template Name: home-template
 					<div class="rowpair">
 						<?php } ?>
 						<div align="center" class="entry-content-circle float-left fadeIn" ">
-							<h2 class="main-entry-title-circle"><?php the_title();?></h2>
-							<?php the_excerpt();?>
-							<a class="comment-link" href="<?php comments_link(); ?>">Mer...</a>
-							<?php edit_post_link( __( 'Redigera', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
-							<div class="entry-meta" style="float:right">
-								<?php shape_posted_on(); ?>
-							</div><!-- .entry-meta -->
+							<h2 class="main-entry-title-circle"><?php hin_linked_title(); ?></h2>
+							<?php hin_linked_excerpt(); ?>
+							<?php shape_posted_on(); ?>
 						</div>
-						<?php if( $c == 3) {
+						<?php if($c == 3) {
 							echo '</div>';
 						}
 						else if($c == 5){
@@ -43,7 +39,8 @@ Template Name: home-template
 				endwhile;?>
 				<?php
 				if($clastpost != 3 || $clastpost != 5) {
-					echo '</div>'; }
+					echo '</div>';
+				}
 				?>
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->

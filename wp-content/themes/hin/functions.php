@@ -12,7 +12,13 @@
  * @since Hin 1.0
  */
 
+function hin_linked_title() {
+    echo '<a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_title().'</a>';
+}
 
+function hin_linked_excerpt() {
+    echo '<a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_excerpt().'</a>';
+}
 
 if ( ! isset( $content_width ) )
     $content_width = 950; /* pixels */
@@ -125,16 +131,10 @@ function hin_scripts() {
     
 	if ( is_page_template('audio-template.php') ) {
 	//Add jquery eventsubscription on audio template.
-	wp_enqueue_script( 'sCloudwidget','http://w.soundcloud.com/player/api.js', array( 'jquery' ), '20130219', true );
-	//wp_enqueue_script( 'sCloudwidget', get_template_directory_uri() . '/js/jquery.sCloudwidget.js', array( 'jquery' ), '20130219', true );
+	wp_enqueue_script( 'sCloudwidget','http://w.soundcloud.com/player/api.js', array( 'jquery' ), '20130219', true );	
 	wp_enqueue_script( 'setAudioEvents', get_template_directory_uri() . '/js/jquery.setAudioEvents.js', array( 'jquery' ), '20130219', true );	
 	
-	}	
-	// Returns false when 'about.php' is not being used.
-
-	/*if ( is_singular() && wp_attachment_is_image() ) {
-        wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
-    }*/
+	}
 }
 add_action( 'wp_enqueue_scripts', 'hin_scripts' );
 
@@ -248,6 +248,29 @@ function create_audiopost() {
     )
   );
 }
+
+add_action( 'init', 'create_member' );
+function create_member() {
+    $labels = array(
+        'name' => 'Medlemmar',
+        'singular_name' => 'Medlem',
+        'parent_item_colon' => ''
+    );
+
+    $supports = array('title', 'editor', 'author', 'revisions', 'excerpt', 'thumbnail');
+    register_post_type('member',
+        array(
+            'labels' => $labels,
+            'public' => true,
+            'supports' => $supports
+        )
+    );
+}
+
+/**
+ * Register thumbnail sizes
+ */
+add_theme_support('post-thumbnails');
 
 /**
  * Implement the Custom Header feature
