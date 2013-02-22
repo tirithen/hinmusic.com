@@ -14,32 +14,34 @@ Template Name: audio-template
 				while ( $loop->have_posts() ) : $loop->the_post(); $c++; $clastpost = $c; ?>
 				<?php if( $c == 1) {?>				
 				 <div class="rowfull-medium">				 
-				<?php } else if($c == 4){?>				
-				<div class="rowpair-medium">					
-				<?php } ?>				
-					<div align="center" class="entry-content-circle-medium float-left fadeIn">
-						<h2 class="main-entry-title-circle"><?php the_title();?></h2>
-				<div class="audiocontainer">
-				 <?php the_excerpt();?>	
-				</div>
-				 <a class="comment-link" href="<?php comments_link(); ?>">
-				   Mer..
-				 </a>
-				 <?php edit_post_link( __( 'Redigera', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
-				 <div class="entry-meta" style="float:right">
-					<?php shape_posted_on(); ?>
-				 </div><!-- .entry-meta -->
-				</div>
-				<?php if( $c == 3) {
-					    echo '</div>'; }
-					  else if($c == 5){
-			            echo '</div>';
-			            $c = 0; }
-				endwhile;?>
-				<?php
-				if($clastpost != 3 || $clastpost != 5) {
-					    echo '</div>'; }
-				?>
+				<?php } else if($c == 3){?>				
+				<div class="rowsingle-medium">					
+				<?php } ?>	
+				<?php if( $c == 2) {?>	
+					<div align="center" class="entry-content-circle-medium float-left invisible"></div>	
+				<?php } ?>
+					<div align="center" class="entry-content-circle-medium float-left">
+							<h2 class="main-entry-title-circle"><?php the_title();?></h2>
+					<div class="audiocontainer">
+						<?php the_content();?>	
+					</div>
+					<a class="comment-link" href="<?php comments_link(); ?>">
+						Mer..
+					</a>
+					<?php edit_post_link( __( 'Redigera', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
+					<div class="entry-meta" style="float:right">
+						<?php shape_posted_on(); ?>
+					</div><!-- .entry-meta -->
+					</div>									
+				<?php if( $c == 2) {?>
+					</div>				
+				<?php } else if($c == 3) { ?>
+					</div>
+			    <?php $c = 0; }?>
+				<?php endwhile;?>				
+				<?php if($clastpost != 3 || $clastpost != 4) {?>
+					</div>
+				<?php } ?>
             </div><!-- #content .site-content -->
         </div><!-- #primary .content-area -->
 

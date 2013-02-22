@@ -123,6 +123,15 @@ function hin_scripts() {
 	wp_enqueue_script( 'basicsliderInit', get_template_directory_uri() . '/js/jquery.basicsliderInit.js', array( 'jquery' ), '20130219', true );
 	wp_enqueue_script( 'shadowboxInit', get_template_directory_uri() . '/js/jquery.shadowboxInit.js', array( 'jquery' ), '20130219', true );
     
+	if ( is_page_template('audio-template.php') ) {
+	//Add jquery eventsubscription on audio template.
+	wp_enqueue_script( 'sCloudwidget','http://w.soundcloud.com/player/api.js', array( 'jquery' ), '20130219', true );
+	//wp_enqueue_script( 'sCloudwidget', get_template_directory_uri() . '/js/jquery.sCloudwidget.js', array( 'jquery' ), '20130219', true );
+	wp_enqueue_script( 'setAudioEvents', get_template_directory_uri() . '/js/jquery.setAudioEvents.js', array( 'jquery' ), '20130219', true );	
+	
+	}	
+	// Returns false when 'about.php' is not being used.
+
 	/*if ( is_singular() && wp_attachment_is_image() ) {
         wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
     }*/
