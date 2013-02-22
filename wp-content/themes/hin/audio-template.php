@@ -20,7 +20,7 @@ Template Name: audio-template
 				<?php if( $c == 2) {?>	
 					<div align="center" class="entry-content-circle-medium float-left invisible"></div>	
 				<?php } ?>
-					<div align="center" class="entry-content-circle-medium float-left">
+					<div align="center" class="entry-content-circle-medium float-left fadeIn">
 							<h2 class="main-entry-title-circle"><?php the_title();?></h2>
 					<div class="audiocontainer">
 						<?php the_content();?>	
