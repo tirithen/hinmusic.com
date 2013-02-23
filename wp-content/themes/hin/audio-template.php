@@ -23,7 +23,7 @@ Template Name: audio-template
 					<div align="center" class="entry-content-circle-medium float-left fadeIn">
 							<h2 class="main-entry-title-circle"><?php the_title();?></h2>
 					<div class="audiocontainer">
-						<?php the_content();?>	
+						<?php the_content();?>						
 					</div>
 					<a class="comment-link" href="<?php comments_link(); ?>">
 						Mer..
