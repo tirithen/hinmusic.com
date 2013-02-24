@@ -1290,6 +1290,7 @@ body.error404 h1 {
 /* Members page */
 body.page-template-memberslist-template-php h1 {
 	text-align: center;
+	margin-bottom: 10px;
 
 }
 
@@ -1300,8 +1301,8 @@ body.page-template-memberslist-template-php #content {
 body.page-template-memberslist-template-php #content li {
 	list-style-type: none;
 	margin: 0 auto;
-	padding-bottom: 130px;
-	width: 680px;
+	padding-bottom: 70px;
+	width: 620px;
 	clear: both;
 	overflow: hidden;
 }
@@ -1313,7 +1314,7 @@ body.page-template-memberslist-template-php #content img {
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	display: block;
-	margin: 0 20px;
+	margin: 0 5px;
 	float: left;
 	position: relative;
 	top: 40px;
@@ -1323,10 +1324,11 @@ body.page-template-memberslist-template-php #content img {
 
 body.page-template-memberslist-template-php #content .entry-content-circle {
 	display: block;
-	margin: 0 20px;
+	margin: 0 5px;
 	float: left;
 }
 
 body.page-template-memberslist-template-php #content li:nth-child(even) .entry-content-circle {
 	float: right;
+	
 }
