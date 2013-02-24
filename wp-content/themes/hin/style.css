@@ -605,7 +605,8 @@ body {
 	display: inline-block;
 }
 
-.entry-content-circle {
+.entry-content-circle,
+.entry-content-circle-member {
 	padding: 50px;
 	overflow:hidden;
 	margin: 0px 5px -20px 5px;
@@ -624,6 +625,11 @@ body {
 	-ms-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
+}
+
+.entry-content-circle:hover,
+.entry-content-circle-medium:hover{
+	background: rgb(0, 0, 0);
 }
 
 .entry-content-circle-medium,
@@ -1342,18 +1348,17 @@ body.page-template-memberslist-template-php #content img {
 	height: 300px;
 }
 
-body.page-template-memberslist-template-php #content .entry-content-circle {
+.entry-content-circle-member {
 	display: block;
 	margin: 0 5px;
 	float: left;
 }
 
-body.page-template-memberslist-template-php #content .entry-content-circle h2 {
+#content .entry-content-circle-member h2 {
 	padding-top: 8px;
 	padding-bottom: 12px;
 }
 
-body.page-template-memberslist-template-php #content li:nth-child(even) .entry-content-circle {
-	float: right;
-
+#content li:nth-child(even) .entry-content-circle-member {
+	float: right;	
 }
