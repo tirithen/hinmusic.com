@@ -32,7 +32,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 
-html {bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+html {
 	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 	text-shadow: 0 1px 1px #000;
@@ -370,8 +370,8 @@ body {
 }
 
 
-#primary-fixed-large {    
-	width:990px;	
+#primary-fixed-large {
+	width:990px;
     margin-left:auto;
     margin-right:auto;
 }
@@ -638,11 +638,11 @@ body {
 	-moz-transition: background 0.5s linear;
 	-ms-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;	
+	transition: background 0.5s linear;
 }
 
-.entry-content-circle-medium:hover{	
-	background: rgba(240, 240, 240, .20);	
+.entry-content-circle-medium:hover{
+	background: rgba(240, 240, 240, .20);
 }
 
 .audiocontainer { /* TODO: figure out if audiocontainer should be a class selector instead */
@@ -650,7 +650,7 @@ body {
 	margin-right:auto;
 	margin-top:10px;
 	margin-bottom:20px;
-	padding:-3px;	
+	padding:-3px;
 }
 
 .entry-content-circle-large,
@@ -704,7 +704,7 @@ body {
  .invisible {
 	visibility:hidden;
  }
- 
+
 
 .gallerycollection  {
 	margin-top:10%;
