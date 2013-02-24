@@ -6,7 +6,7 @@ Template Name: Members listing template
 
 <?php get_header(); ?>
 <div id="primary" class="content-area">
-	<h1><?php the_title();?></h1>
+	<h1 class="fadeIn"><?php the_title();?></h1>
 	<ul id="content" role="main">
 		<?php
 			$args = array('post_type' => 'member', 'posts_per_page' => -1);
@@ -14,7 +14,7 @@ Template Name: Members listing template
 			if (have_posts()) : while ($loop->have_posts()) : $loop->the_post();
 		?>
 			<li>
-				<div class="entry-content-circle">
+				<div class="entry-content-circle fadeIn">
 					<h2><?php the_title();?></h2>
 					<?php the_content();?>
 				</div>

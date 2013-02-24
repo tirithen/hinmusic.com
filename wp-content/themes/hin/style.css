@@ -700,9 +700,7 @@ body {
 
 /* =Media
 ----------------------------------------------- */
-.fadeIn {
-	display:none;
- }
+
  .invisible {
 	visibility:hidden;
  }
