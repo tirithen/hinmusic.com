@@ -386,6 +386,17 @@ body {
 
 #content {
 	margin: 5 5% 5 0;
+	transition: opacity .5s ease-out;
+	-o-transition: opacity .5s ease-out;
+	-ms-transition: opacity .5s ease-out;
+	-moz-transition: opacity .5s ease-out;
+	-webkit-transition: opacity .5s ease-out;
+	opacity: 1;
+	-webkit-transform: translateZ(0);
+}
+
+#content.hidden {
+	opacity: 0;
 }
 
 #secondary { /* Sidebar 1 */
@@ -1344,5 +1355,5 @@ body.page-template-memberslist-template-php #content .entry-content-circle h2 {
 
 body.page-template-memberslist-template-php #content li:nth-child(even) .entry-content-circle {
 	float: right;
-	
+
 }

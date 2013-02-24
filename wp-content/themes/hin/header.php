@@ -49,3 +49,9 @@
 		<div id="main" class="site-main">
 			<div id="primary" class="content-area">
 				<div id="content" class="site-content" role="main">
+					<script type="text/javascript">
+						var content = jQuery('#content').addClass('hidden');
+						jQuery(window).load(function () {
+							content.removeClass('hidden');
+						});
+					</script>
