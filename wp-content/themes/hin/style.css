@@ -594,7 +594,8 @@ body {
 	display: inline-block;
 }
 
-.entry-content-circle {
+.entry-content-circle,
+.entry-content-circle-member {
 	padding: 50px;
 	overflow:hidden;
 	margin: 0px 5px -20px 5px;
@@ -607,12 +608,17 @@ body {
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	text-align: center;
-	position: relative;
+	position: relative;	
 	-webkit-transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-ms-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
+}
+
+.entry-content-circle:hover,
+.entry-content-circle-medium:hover{
+	background: rgb(0, 0, 0);
 }
 
 .entry-content-circle-medium,
@@ -655,10 +661,6 @@ body {
 	-ms-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
-}
-.entry-content-circle:hover,
-.entry-content-circle-medium:hover{
-	background: rgb(0, 0, 0);
 }
 
 .entry-content-circle-medium time { /* Published date */
@@ -1327,13 +1329,13 @@ body.page-template-memberslist-template-php #content img {
 	height: 300px;
 }
 
-body.page-template-memberslist-template-php #content .entry-content-circle {
+.entry-content-circle-member {
 	display: block;
 	margin: 0 5px;
 	float: left;
 }
 
-body.page-template-memberslist-template-php #content li:nth-child(even) .entry-content-circle {
+#content li:nth-child(even) .entry-content-circle-member {
 	float: right;
 	
 }

@@ -14,7 +14,7 @@ Template Name: Members listing template
 			if (have_posts()) : while ($loop->have_posts()) : $loop->the_post();
 		?>
 			<li>
-				<div class="entry-content-circle fadeIn">
+				<div class="entry-content-circle-member fadeIn">
 					<h2><?php the_title();?></h2>
 					<?php the_content();?>
 				</div>
