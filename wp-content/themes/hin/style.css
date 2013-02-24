@@ -644,11 +644,6 @@ body {
 .entry-content-circle-medium:hover{	
 	background: rgba(240, 240, 240, .20);	
 }
-.audiocontainer {
-	-webkit-box-shadow: 0px 0px 20px 5px #F8F8F8, inset 0px 0px 20px 5px #F8F8F8;
-	-moz-box-shadow: 0px 0px 20px 5px #F8F8F8, inset 0px 0px 20px 5px #F8F8F8;
-	box-shadow: 0px 0px 20px 5px #F8F8F8, inset 0px 0px 20px 5px #F8F8F8;
-}
 
 .audiocontainer { /* TODO: figure out if audiocontainer should be a class selector instead */
 	margin-left:auto;
