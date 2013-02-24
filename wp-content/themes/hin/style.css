@@ -644,6 +644,10 @@ body {
 	text-decoration: underline;
 }
 
+.entry-content-circle > a:hover {
+	text-decoration: none;
+}
+
 .entry-content-circle-medium {
 	padding: 50px;
 	margin: 0px 5px -20px 5px;
@@ -885,7 +889,7 @@ object {
 .main-entry-title-circle{
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:12px;
+	padding-top:8px;
 	padding-bottom:12px;
 	text-align:center;
 	overflow: hidden;
@@ -1335,7 +1339,11 @@ body.page-template-memberslist-template-php #content img {
 	float: left;
 }
 
+#content .entry-content-circle-member h2 {
+	padding-top: 8px;
+	padding-bottom: 12px;
+}
+
 #content li:nth-child(even) .entry-content-circle-member {
-	float: right;
-	
+	float: right;	
 }
