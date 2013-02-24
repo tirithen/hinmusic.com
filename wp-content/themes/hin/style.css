@@ -502,14 +502,13 @@ body {
 
 .menuleft ul li a:hover,
 .menuright ul li a:hover {
-	text-shadow: 0 0 10px rgba(246, 255, 115, 0.5);
+	text-decoration: underline;
 }
 
 .menuleft ul li.current-menu-item a,
 .menuright ul li.current-menu-item a {
 	color: #fff;
 	font-weight: 700;
-	text-shadow: 0 0 10px rgba(246, 255, 115, 0.5);
 }
 
 /* =Content
@@ -607,14 +606,20 @@ body {
 	position: relative;
 }
 
-.entry-content-circle > a[rel=bookmark] { /* Published date */
+.entry-content-circle-large {
+	position: relative;
+}
+
+.entry-content-circle time, /* Published date */
+.entry-content-circle-large time { /* Published date */
 	position: absolute;
 	bottom: 30px;
-	left: 96px;
+	left: 91px;
 }
 
 .entry-content-circle a,
-.entry-content-circle > a[rel=bookmark]:hover {
+.entry-content-circle > a[rel=bookmark]:hover,
+.entry-content-circle-large .entry-meta a:hover {
 	text-decoration: none;
 }
 
@@ -643,6 +648,11 @@ body {
 
 .entry-content-circle-medium:hover{
 	background: rgba(240, 240, 240, .20);
+}
+
+.entry-content-circle-large time { /* Published date */
+	bottom: 30px;
+	left: 273px;
 }
 
 .audiocontainer { /* TODO: figure out if audiocontainer should be a class selector instead */
@@ -822,12 +832,15 @@ object {
 }
 
 .site-content .site-navigation a {
-	background: rgba(0, 0, 0, 0.3);
-	border-radius: 15px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.62);
-	font-size: 105%;
+	font-size: 120%;
 	padding: 1px 8px;
-	text-shadow: none;
+	display: block;
+	max-width: 230px;
+	text-decoration: none;
+}
+
+.site-content .site-navigation a:hover {
+	text-decoration: underline;
 }
 
 .site-content .nav-previous {
@@ -839,6 +852,10 @@ object {
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+.site-content .nav-next a {
+	float: right;
 }
 
 /*Posts
@@ -1290,6 +1307,8 @@ body.page-template-memberslist-template-php #content img {
 	float: left;
 	position: relative;
 	top: 40px;
+	width: 300px;
+	height: 300px;
 }
 
 body.page-template-memberslist-template-php #content .entry-content-circle {
