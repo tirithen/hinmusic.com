@@ -371,8 +371,7 @@ body {
 
 
 #primary-fixed-large {    
-	min-width:990px;
-	max-width:1010px;
+	width:990px;	
     margin-left:auto;
     margin-right:auto;
 }
@@ -639,29 +638,11 @@ body {
 	-moz-transition: background 0.5s linear;
 	-ms-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	-webkit-transition: width 0.5s linear;
-	-moz-transition: width 0.5s linear;
-	-ms-transition: width 0.5s linear;
-	-o-transition: width 0.5s linear;
-	transition: width 0.5s linear;
-	-webkit-transition: height 0.5s linear;
-	-moz-transition: height 0.5s linear;
-	-ms-transition: height 0.5s linear;
-	-o-transition: height 0.5s linear;
-	transition: height 0.5s linear;
+	transition: background 0.5s linear;	
 }
 
-.entry-content-circle-medium:hover{
-	/*background: rgba(0, 0, 190, .40);*/
-	background: rgba(240, 240, 240, .40);
-	width: 240px;
-	height: 240px;
-}
-.audiocontainer {
-	-webkit-box-shadow: 0px 0px 20px 5px #F8F8F8, inset 0px 0px 20px 5px #F8F8F8;
-	-moz-box-shadow: 0px 0px 20px 5px #F8F8F8, inset 0px 0px 20px 5px #F8F8F8;
-	box-shadow: 0px 0px 20px 5px #F8F8F8, inset 0px 0px 20px 5px #F8F8F8;
+.entry-content-circle-medium:hover{	
+	background: rgba(240, 240, 240, .20);	
 }
 
 .audiocontainer { /* TODO: figure out if audiocontainer should be a class selector instead */
@@ -719,9 +700,7 @@ body {
 
 /* =Media
 ----------------------------------------------- */
-.fadeIn {
-	display:none;
- }
+
  .invisible {
 	visibility:hidden;
  }

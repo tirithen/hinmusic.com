@@ -24,10 +24,7 @@ Template Name: audio-template
 							<h2 class="main-entry-title-circle"><?php the_title();?></h2>
 					<div class="audiocontainer">
 						<?php the_content();?>						
-					</div>
-					<a class="comment-link" href="<?php comments_link(); ?>">
-						Mer..
-					</a>
+					</div>					
 					<?php edit_post_link( __( 'Redigera', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 					<div class="entry-meta" style="float:right">
 						<?php shape_posted_on(); ?>
