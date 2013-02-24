@@ -610,6 +610,11 @@ body {
 	-webkit-border-radius: 50%;
 	text-align: center;
 	position: relative;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-ms-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
 }
 
 .entry-content-circle > a[rel=bookmark] { /* Published date */
@@ -645,9 +650,9 @@ body {
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
 }
-
+.entry-content-circle:hover,
 .entry-content-circle-medium:hover{
-	background: rgba(240, 240, 240, .20);
+	background: rgb(0, 0, 0);
 }
 
 .audiocontainer { /* TODO: figure out if audiocontainer should be a class selector instead */
@@ -660,7 +665,7 @@ body {
 
 .entry-content-circle-large,
 .entry-content-gallery-circle-large {
-	padding: 70px;
+	padding: 80px;
 	overflow:hidden;
 	margin-left: auto;
 	margin-right: auto;
