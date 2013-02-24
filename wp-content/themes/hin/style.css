@@ -547,17 +547,17 @@ body {
 .rowfull,
 .rowpair {
 }
-.rowfull {	
-	float:left;	
+.rowfull {
+	float:left;
 	width:930px;
 }
 .rowpair {
-	margin:0px auto 0px auto;	
+	margin:0px auto 0px auto;
 	width:620px;
 }
 .rowfull-medium{
 	float:left;
-	width:990px;	
+	width:990px;
 }
 .rowsingle-medium {
 	margin:0px auto 0px auto;
@@ -615,11 +615,13 @@ body {
 	transition: background 0.5s linear;
 }
 
+.entry-content-circle-medium,
 .entry-content-circle-large {
 	position: relative;
 }
 
-.entry-content-circle time, /* Published date */
+.entry-content-circle time,
+.entry-content-circle-medium time,
 .entry-content-circle-large time { /* Published date */
 	position: absolute;
 	bottom: 30px;
@@ -659,8 +661,11 @@ body {
 	background: rgb(0, 0, 0);
 }
 
+.entry-content-circle-medium time { /* Published date */
+	left: 111px;
+}
+
 .entry-content-circle-large time { /* Published date */
-	bottom: 30px;
 	left: 273px;
 }
 
