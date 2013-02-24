@@ -5,7 +5,6 @@ Template Name: Members listing template
 ?>
 
 <?php get_header(); ?>
-<div id="primary" class="content-area">
 	<h1 class="fadeIn"><?php the_title();?></h1>
 	<ul id="content" role="main">
 		<?php
@@ -27,6 +26,5 @@ Template Name: Members listing template
 			</li>
 		<?php endwhile; endif;?>
 	</ul>
-</div>
 <?php get_footer(); ?>
 

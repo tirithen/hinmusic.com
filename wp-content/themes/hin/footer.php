@@ -8,16 +8,9 @@
 * @since Hin 1.0
 */
 ?>
- 
-</div><!-- #main .site-main -->
- 
-<footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="site-info">
-        
-    </div><!-- .site-info -->
-</footer><!-- #colophon .site-footer -->
- 
-<?php wp_footer(); ?>
- 
-</body>
+                </div><!-- #content .site-content -->
+            </div><!-- #primary .content-area -->
+        </div><!-- #main .site-main -->
+        <?php wp_footer(); ?>
+    </body>
 </html>
