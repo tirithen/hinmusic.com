@@ -5,7 +5,7 @@ Template Name: Members listing template
 ?>
 
 <?php get_header(); ?>
-	<h1 class="fadeIn"><?php the_title();?></h1>
+	<h1><?php the_title();?></h1>
 	<ul id="content" role="main">
 		<?php
 			$args = array('post_type' => 'member', 'posts_per_page' => -1);

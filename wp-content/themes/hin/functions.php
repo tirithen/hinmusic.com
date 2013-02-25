@@ -125,15 +125,14 @@ function hin_scripts() {
     wp_enqueue_script( 'codaslider', get_template_directory_uri() . '/js/codaslider/js/jquery.coda-slider-3.0.js', array( 'jquery' ), '20120206', true );
 	wp_enqueue_script( 'basicslider', get_template_directory_uri() . '/js/basicslider/js/bjqs-1.3.js', array( 'jquery' ), '20120206', true );
 	wp_enqueue_script( 'flippy', get_template_directory_uri() . '/js/flippy/jquery.flippy.js', array( 'jquery' ), '20130101', true );
-	wp_enqueue_script( 'pageFadeIn', get_template_directory_uri() . '/js/jquery.pageFadeIn.js', array( 'jquery' ), '20130219', true );
 	wp_enqueue_script( 'basicsliderInit', get_template_directory_uri() . '/js/jquery.basicsliderInit.js', array( 'jquery' ), '20130219', true );
 	wp_enqueue_script( 'shadowboxInit', get_template_directory_uri() . '/js/jquery.shadowboxInit.js', array( 'jquery' ), '20130219', true );
-    
+
 	if ( is_page_template('audio-template.php') ) {
 	//Add jquery eventsubscription on audio template.
-	wp_enqueue_script( 'sCloudwidget','http://w.soundcloud.com/player/api.js', array( 'jquery' ), '20130219', true );	
-	wp_enqueue_script( 'setAudioEvents', get_template_directory_uri() . '/js/jquery.setAudioEvents.js', array( 'jquery' ), '20130219', true );	
-	
+	wp_enqueue_script( 'sCloudwidget','http://w.soundcloud.com/player/api.js', array( 'jquery' ), '20130219', true );
+	wp_enqueue_script( 'setAudioEvents', get_template_directory_uri() . '/js/jquery.setAudioEvents.js', array( 'jquery' ), '20130219', true );
+
 	}
 }
 add_action( 'wp_enqueue_scripts', 'hin_scripts' );
