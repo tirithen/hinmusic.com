@@ -778,9 +778,8 @@ body {
 }
 
 .entry-content-circle img,
-.entry-content-circle-large img{
-	width: 200px;
-	height: 200px;
+.entry-content-circle-large img {
+	max-width: 100%;
 	border-radius: 50%;
 	-o-border-radius: 50%;
 	-ms-border-radius: 50%;
@@ -1360,5 +1359,5 @@ body.page-template-memberslist-template-php #content img {
 }
 
 #content li:nth-child(even) .entry-content-circle-member {
-	float: right;	
+	float: right;
 }
