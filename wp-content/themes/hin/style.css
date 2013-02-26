@@ -386,7 +386,7 @@ body {
 }
 
 #content {
-	margin: 5 5% 5 0;
+	margin: 0;
 	transition: opacity .5s ease-out;
 	-o-transition: opacity .5s ease-out;
 	-ms-transition: opacity .5s ease-out;
@@ -904,14 +904,14 @@ object {
 .main-entry-title-circle{
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:8px;	
+	padding-top:8px;
 	padding-bottom:12px;
 	text-align:center;
 	overflow: hidden;
-	
+
 }
 h2.main-entry-title-circle {
-	height:21px;	
+	height:21px;
 }
 
 /* =Comments
