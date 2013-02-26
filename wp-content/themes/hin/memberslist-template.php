@@ -13,13 +13,12 @@ Template Name: Members listing template
 			if (have_posts()) : while ($loop->have_posts()) : $loop->the_post();
 		?>
 			<li>
-				<div class="entry-content-circle-member fadeIn">
+				<div class="entry-content-circle-member">
 					<h2><?php the_title();?></h2>
 					<?php the_content();?>
 				</div>
 				<?php
 				if (has_post_thumbnail()) {
-					//~ the_post_thumbnail(array('class' => 'entry-content-circle'));
 					the_post_thumbnail(array(300, 300));
 				}
 				?>

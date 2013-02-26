@@ -14,7 +14,7 @@ Template Name: home-template
 					<?php } else if($c == 4){?>
 					<div class="rowpair">
 						<?php } ?>
-						<div align="center" class="entry-content-circle float-left fadeIn" ">
+						<div align="center" class="entry-content-circle float-left" ">
 							<h2 class="main-entry-title-circle"><?php hin_linked_title(); ?></h2>
 							<?php hin_linked_excerpt(); ?>
 							<?php shape_posted_on(); ?>

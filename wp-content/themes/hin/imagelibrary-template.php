@@ -8,7 +8,7 @@ Template Name: imagelibrary-template
 				<?php $args = array( 'post_type' => 'imagelibrary', 'posts_per_page' => 10 );
 				$loop = new WP_Query( $args );
 				?>
-			 <div id="slider" class="slider fadeIn" style="width:100%">
+			 <div id="slider" class="slider">
 				<ul class="bjqs">
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 				<li>
@@ -22,7 +22,7 @@ Template Name: imagelibrary-template
 				</div>
 				<br />
 				<?php edit_post_link( __( 'Redigera', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
-				<div class="entry-meta" style="float:right">
+				<div class="entry-meta">
 					<?php shape_posted_on(); ?>
 				</div><!-- .entry-meta -->
 				</div>
