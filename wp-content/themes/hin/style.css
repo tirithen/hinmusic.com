@@ -719,6 +719,7 @@ body {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	text-align: center;
+	position: relative;
 }
 
 .page-links {
@@ -865,6 +866,9 @@ object {
 
 .site-content .site-navigation {
 	margin: 0 0 1.5em;
+	position: absolute;
+	width: 960px;
+	z-index: 2;
 }
 
 .site-content .site-navigation a {
