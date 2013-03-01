@@ -1370,3 +1370,24 @@ body.page-template-memberslist-template-php #content img {
 #content li:nth-child(even) .entry-content-circle-member {
 	float: right;
 }
+
+/* Advanced browser check plugin */
+.adv_browser_check {
+	background: #000;
+	border: 3px solid #222;
+	padding: 30px;
+	margin-left: -390px;
+}
+
+.adv_browser_check h1 {
+	color: #fffffe;
+	margin-bottom: 15px;
+}
+
+.adv_browser_check ul {
+	margin-top: 20px;
+}
+
+.adv_browser_check ul li a {
+	margin: 0 15px;
+}
