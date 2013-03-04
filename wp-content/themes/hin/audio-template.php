@@ -8,34 +8,25 @@ Template Name: audio-template
 		<?php
 		$args = array( 'post_type' => 'audiopost', 'posts_per_page' => 20 );
 		$loop = new WP_Query( $args );
-		$c = 0;
-		$clastpost = 0;
-		while ( $loop->have_posts() ) : $loop->the_post(); $c++; $clastpost = $c; ?>
-			<?php if( $c == 1) {?>
-			<div class="rowfull-medium">
-			<?php } else if($c == 3){?>
-			<div class="rowsingle-medium">
-			<?php } ?>
-
-			<?php if( $c == 2) {?>
-			<div class="entry-content-circle-medium float-left invisible"></div>
-			<?php } ?>
-				<div class="entry-content-circle-medium float-left">
+		$i = 0;
+		while ( $loop->have_posts() ) : $loop->the_post(); $i++; $i_modulo_3 = $i % 4; ?>
+			<?php
+			if($i_modulo_3 === 1) {
+				echo '<div class="rowfull-medium">';
+			} else if($i_modulo_3 === 3){
+				echo '<div class="rowsingle-medium">';
+			}
+			?>
+				<div class="entry-content-circle-medium">
 					<h2 class="main-entry-title-circle"><?php the_title();?></h2>
 					<div class="audiocontainer"><?php the_content();?></div>
-					<div class="entry-meta" style="float:right">
-					<?php shape_posted_on(); ?>
-				</div><!-- .entry-meta -->
-			</div>
-
-			<?php if( $c == 2) {?>
-			</div>
-			<?php } else if($c == 3) { ?>
-			</div>
-			<?php $c = 0; }?>
-		<?php endwhile;?>
-		<?php if($clastpost != 3 || $clastpost != 4) {?>
-			</div>
-		<?php } ?>
+					<div class="entry-meta">
+						<?php shape_posted_on(); ?>
+					</div><!-- .entry-meta -->
+				</div>
+		<?php
+		if($i_modulo_3 === 2 || $i_modulo_3 === 0) {
+			echo '</div>';
+		}
+		 endwhile; ?>
 <?php get_footer(); ?>
-

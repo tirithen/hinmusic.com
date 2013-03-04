@@ -569,7 +569,7 @@ body {
 }
 .rowfull-medium{
 	float:left;
-	width:990px;
+	width:930px;
 }
 .rowsingle-medium {
 	margin:0px auto 0px auto;
@@ -678,6 +678,15 @@ body {
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
 }
+
+.rowfull-medium .entry-content-circle-medium {
+	float: right;
+}
+
+.rowfull-medium .entry-content-circle-medium:first-child {
+	float: left;
+}
+
 .entry-content-circle:hover,
 .entry-content-circle-medium:hover{
 	background: rgb(0, 0, 0);

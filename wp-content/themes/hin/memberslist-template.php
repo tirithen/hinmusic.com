@@ -6,7 +6,7 @@ Template Name: Members listing template
 
 <?php get_header(); ?>
 	<h1><?php the_title();?></h1>
-	<ul id="content" role="main">
+	<ul>
 		<?php
 			$args = array('post_type' => 'member', 'posts_per_page' => -1);
 			$loop = new WP_Query($args);
